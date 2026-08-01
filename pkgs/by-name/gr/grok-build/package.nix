@@ -10,7 +10,7 @@
   grok-build,
 }:
 let
-  version = "0.2.117";
+  version = "0.2.118";
 
   throwSystem = throw "Unsupported system: ${stdenvNoCC.hostPlatform.system}";
 
@@ -27,10 +27,10 @@ let
       url = "https://x.ai/cli/grok-${version}-${upstreamPlatform}";
       hash =
         {
-          x86_64-linux = "sha256-L2+zcKeY59bgRZXhF6mDlp3jM/Zb+vvYEu4ofH+yuD8=";
-          aarch64-linux = "sha256-Ae18ikCIYX4aysxJyqh/jDTar2vb+39Z5nn6JhqKjIQ=";
-          x86_64-darwin = "sha256-tPg52+ajroCrgE9fR3+dGyDaRs0uYeiE8CObqsGjiog=";
-          aarch64-darwin = "sha256-A95zi4zNQFaaGJBd2v4AQibv8zQ7hCOhckd7J2fnIdI=";
+          x86_64-linux = "sha256-wZIoLmKr0kqb5kdQNj/4J9gGumE5GDmajGnIFbHaCPY=";
+          aarch64-linux = "sha256-VAEOM1qs5rXe3QIlOeznvIPzglPoY2qvB5ZWKu7LLmc=";
+          x86_64-darwin = "sha256-kxg8+wct+Iy6xwfkT4u8YtlHTSBH6chgVRnGS3IOJok=";
+          aarch64-darwin = "sha256-LeW5YJoDSS3WueTMqWN9ZR/pmLuDcb+fhS57KLOMA04=";
         }
         .${system};
     }
